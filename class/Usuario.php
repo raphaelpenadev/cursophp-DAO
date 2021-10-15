@@ -55,7 +55,8 @@ class Usuario
             ":ID" => $id,
         ]);
 
-        if (isset($results[0])) {
+        if (count($results) > 0) {
+
             $row = $results[0];
 
             $this->setIdusuario($row['idusuario']);
