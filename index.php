@@ -26,9 +26,19 @@ require_once("config.php");
 // $aluno = new Usuario("aluno", "123");
 // echo $aluno;
 
-$usuario = new Usuario();
-$usuario->LoadById(8);
+// Alterar um usuario
+// $usuario = new Usuario();
+// $usuario->LoadById(8);
 
-$usuario->update('professor', '123');
+// $usuario->update('professor', '123');
+
+// echo $usuario;
+
+// Deletar um usuario
+$usuario = new Usuario();
+
+$usuario->LoadById(4);
+
+$usuario->delete();
 
 echo $usuario;
